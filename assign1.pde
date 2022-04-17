@@ -1,4 +1,4 @@
-//圖片
+//定義圖片
 PImage bgImg;
 PImage soilImg;
 PImage lifeImg;
@@ -8,7 +8,7 @@ int x =0;
 int lightPos = 240+25;
 PImage groundhog;
 
-void setup(){
+void setup(){//載入圖片
     size(640, 480, P2D);
 
    bgImg = loadImage("img/bg.jpg");
@@ -19,7 +19,8 @@ void setup(){
    groundhog = loadImage("img/groundhog.png");
 }
 
-void draw() {
+void draw() {//設定圖片位置
+  image(bgImg,0,0);  
   strokeWeight(15.0);
   stroke(124,204,25);
   line(0,152.5,640,152.5);
@@ -34,6 +35,7 @@ void draw() {
   image(soldierImg, x, 160);
   image(robotImg, 240, 240);
   image(groundhog,280,80);
+  
   strokeWeight(10.0);
   strokeCap(ROUND);
   stroke(255,0,0);
@@ -42,5 +44,4 @@ void draw() {
   x=x+2;
   if ( x > 640)
     x = -80;
-  image(bgImg,0,0);
 }
