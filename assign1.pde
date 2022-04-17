@@ -1,3 +1,4 @@
+//圖片
 PImage bgImg;
 PImage soilImg;
 PImage lifeImg;
@@ -9,7 +10,7 @@ PImage groundhog;
 
 void setup(){
     size(640, 480, P2D);
-    // Enter Your Setup Code Here
+
    bgImg = loadImage("img/bg.jpg");
    soilImg = loadImage("img/soil.png");
    lifeImg= loadImage("img/life.png");
