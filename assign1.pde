@@ -19,7 +19,6 @@ void setup(){
 }
 
 void draw() {
-  image(bgImg,0,0);
   strokeWeight(15.0);
   stroke(124,204,25);
   line(0,152.5,640,152.5);
@@ -42,5 +41,5 @@ void draw() {
   x=x+2;
   if ( x > 640)
     x = -80;
-
+  image(bgImg,0,0);
 }
